@@ -5,7 +5,7 @@ contract dccAuction {
     struct auctioneer {
         address auctioneerAddress;
         uint tokenBought;
-		mapping (bytes32 => uint) myBid; // 경매자들의 각 물품별 입찰가
+        mapping (bytes32 => uint) myBid; // 경매자들의 각 물품별 입찰가
     }
     
     mapping (address => auctioneer) public auctioneers; // 경매자들의 주소
