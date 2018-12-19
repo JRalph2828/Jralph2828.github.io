@@ -323,15 +323,14 @@ function getCandidateInfo() {
       for (let i = 0; i < r.length; i++)
       {
         document.getElementById('highest_' + candidates[i]).innerHTML = r[i].toString();
-    }
+      }
   });
-    dccAuction.getMyBid(function (e, r)
-  {
+    dccAuction.getMyBid(function (e, r) {
       for(let i = 0; i < r.length; i++)
       {
-          document.getElementById('myBid_' + candidates[i]).innerHTML = r[i].toString();
+          document.getElementById('myself_' + candidates[i]).innerHTML = r[i].toString();
       }
-  })
+  });
 }
 
 function voteForProduct(index) {
