@@ -290,6 +290,7 @@ function getLink(addr) {
 }
 
 function getValue() {
+  console.log("?!");
   getEther();
   getToken();
   getTokenInfo();
